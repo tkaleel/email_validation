@@ -1,0 +1,10 @@
+<p>Congratulations! You have entered a valid email address!</p>
+
+<h1>All Emails</h1>
+{% for one_email in emails %}
+<p>Email: {{one_email.email_address}}</p>
+<p>ID: {{one_email.id}}</p>
+<p>Created At: {{one_email.created_at}}</p>
+<!-- <a href="/destroy/{{ one_email.id }}">Delete</a> -->
+<hr>
+{% endfor %}
